@@ -8,8 +8,4 @@ The core parts of the Interpreter will be:
 - Parser (Syntax Analysis)
 - Evaluator
 
-This Interpreter is the first part of a multi-part project that I am planning to develop as a personal exercise.
-
-Below you can see a draft of my initial idea:
-
-![Full Project Diagram](./attachments/MonkeyType_Project.png)
+After that I have plans of implementing a Compiler for the same language.
