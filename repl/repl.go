@@ -6,6 +6,7 @@ import (
 	"io"
 	"strings"
 
+	"github.com/SeaSkyThe/MonkeyInterpreter/evaluator"
 	"github.com/SeaSkyThe/MonkeyInterpreter/lexer"
 	"github.com/SeaSkyThe/MonkeyInterpreter/parser"
 )
@@ -36,8 +37,11 @@ func Start(in io.Reader, out io.Writer) {
 				continue
 			}
 
-			io.WriteString(out, program.String())
-			io.WriteString(out, "\n")
+			evaluated := evaluator.Eval(program)
+			if evaluated != nil {
+				io.WriteString(out, evaluated.Inspect())
+				io.WriteString(out, "\n")
+			}
 
 		}
 	}
