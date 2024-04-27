@@ -3,13 +3,9 @@ This is a Interpreter for the Monkey Programming Language, presented in the "Wri
 
 The core parts of the Interpreter will be:
 
-- Lexer
-- REPL
-- Parser
+- Lexer (Lexical Analysis)
+- REPL (Read-eval-print loop / interactive mode)
+- Parser (Syntax Analysis)
 - Evaluator
 
-This Interpreter is the first part of a multi-part project that I am planning to develop as an personal exercise.
-
-Below you can see a draft of my initial idea
-
-![Full Project Diagram](./attachments/MonkeyType_Project.png)
+After that I have plans of implementing a Compiler for the same language.
