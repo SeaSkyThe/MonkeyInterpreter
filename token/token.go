@@ -42,6 +42,8 @@ const (
 	LBRACKET = "["
 	RBRACKET = "]"
 
+	COLON = ":"
+
 	// Reserved words - keywords
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
